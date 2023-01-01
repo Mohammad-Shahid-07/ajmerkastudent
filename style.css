@@ -491,7 +491,17 @@ animation: heading infinite .5s alternate-reverse ease-in-out;
     margin-left: 0px;
     width: 100%;
   }
+  .contact{
+    flex-direction: column;
+  }
+  .contact_text{
+    width: 100%;
+  }
+  .logo{
+    flex-direction: row;
+  }
 }
+
 @media screen and (max-width: 550px) {
   html{
     font-size: 45%;
