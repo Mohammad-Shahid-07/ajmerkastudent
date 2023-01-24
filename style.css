@@ -296,24 +296,64 @@ animation: heading infinite .5s alternate-reverse ease-in-out;
 }
 
 /* MDSU */
+.search {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-.course {
+#search {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-button {
+  width: 20%;
+  background: #963d9e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #45a049;
+}
+
+#not-found {
+  color: red;
+  font-size: 18px;
+}
+.course_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.course_design {
+  margin: 2rem;
   text-align: center;
   transition: all 0.3s ease;
 }
-.course a {
+.course_design a {
   font-size: 1.5rem;
-  color: white;
+
+  color: rgb(20, 16, 16);
 }
 
-.course img {
+.course_design img {
   width: 150px;
 }
-.course:hover {
+.course_design:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
-/* Course inside */
+/* course_design inside */
 .cname {
   text-align: center;
   font-size: 3rem;
@@ -340,7 +380,7 @@ animation: heading infinite .5s alternate-reverse ease-in-out;
   margin-top: 13rem;
   /* padding: 2rem; */
 }
-.previous_paper_heading {
+.previous_paper_heading h3 {
   font-size: 2rem;
   margin-top: 10rem;
   text-align: center;
@@ -357,12 +397,17 @@ animation: heading infinite .5s alternate-reverse ease-in-out;
   gap: 4rem;
   margin-bottom: 5rem;
 }
+.subject p{
+
+  text-align: center;
+}
 .subject {
   padding: 5rem;
   font-size: 2rem;
-  text-align: center;
 }
-
+.subject a.red{
+  color: red;
+}
 .subject div {
   padding: 1rem;
   text-transform: lowercase;
