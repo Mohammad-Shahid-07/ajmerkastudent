@@ -133,3 +133,30 @@ theamToggle.addEventListener( 'click' , e =>{
 });
 
 
+// // pop up
+// const popup = document.getElementById('popup');
+const closeBtn = document.getElementById('close-btn');
+
+// // Check if this is the user's first visit
+// if (localStorage.getItem('visited') === null) {
+// 	// Show the popup message
+// 	popup.style.display = 'block';
+
+// 	// Set a flag in local storage to indicate that the user has visited before
+// 	localStorage.setItem('visited', 'true');
+// }
+
+// Add an event listener to the close button
+closeBtn.addEventListener('click', function() {
+	popup.style.display = 'none';
+});
+
+ // Check if user has visited before
+ if (!localStorage.getItem('visited')) {
+  // If not, display popup
+  window.onload = function() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    localStorage.setItem('visited', true);
+  }
+}
