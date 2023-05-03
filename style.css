@@ -1131,6 +1131,11 @@ div.previous_paper_heading.course > h2,
     text-align: center;
     margin-bottom: 5rem;
   }
+  #popup{
+    width: 90vw;
+    top: 40%;
+  
+  }
 }
 @media screen and (max-width: 550px) {
   .sub_container h1 {
